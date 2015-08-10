@@ -20,11 +20,11 @@ public class LambdaFunctionHandler implements RequestHandler<AlexaInput, Object>
     @Override
     public AlexaOutput handleRequest(AlexaInput input, Context context) {
         context.getLogger().log("Input: " + input);
-        
+        /*
         AlexaRequestIntent intent = new AlexaRequestIntent();
-        intent.setName(input.getRequest().getIntent().getName());
+        intent.setName(input.getRequest().getIntent().getName());*/
         
-       /* intent = input.getRequest().getIntent();*/
+        AlexaRequestIntent intent = input.getRequest().getIntent();
         
         AlexaOutput output;
         

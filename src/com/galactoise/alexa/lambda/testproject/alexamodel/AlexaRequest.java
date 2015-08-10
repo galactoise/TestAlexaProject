@@ -1,17 +1,15 @@
 package com.galactoise.alexa.lambda.testproject.alexamodel;
 
-import com.amazon.speech.slu.Intent;
-
 public class AlexaRequest {
 
-	private Intent intent;
+	private AlexaRequestIntent intent;
 	private AlexaRequestType type;
 	private String requestId;
 	
-	public Intent getIntent() {
+	public AlexaRequestIntent getIntent() {
 		return intent;
 	}
-	public void setIntent(Intent intent) {
+	public void setIntent(AlexaRequestIntent intent) {
 		this.intent = intent;
 	}
 	public AlexaRequestType getType() {
